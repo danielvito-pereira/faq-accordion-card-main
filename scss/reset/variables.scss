@@ -1,33 +1,23 @@
-/* Aquí definimos las Custom properties */
-:root{
-  --negro         : #393939;
-  --blanco        : #ececec;
-  --sombra-ppal   : #c9c9c9;
-  --sombra-sec    : #ffffff;
-  --borde-negro   : #00000050;
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-  --marcado       : rgb(127, 195, 255);
+:root{
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+
+ /* Gradient */
+ --soft-violet: hsl(273, 75%, 66%);
+ --soft-blue: hsl(240, 73%, 65%);
+
+ 
+ /* Text */
+ --very-dark-grayish-blue: hsl(237, 12%, 33%);
+ --dark-grayish-blue: hsl(240, 6%, 50%);
+
+ /* Tipografía */
+
+ --light-grayish-blue: hsl(240, 5%, 91%);
 
   /* Tipografía */
-  --tipo-principal  : Helvetica, Arial, sans-serif;
+  --tipo-principal  :'Kumbh Sans', sans-serif;
 }
   
-/* Las adaptamos al modo oscuro */
-@media (prefers-color-scheme: dark) {
-  :root{
-      --negro         : #ececec;
-      --blanco        : #303030;
-      --sombra-ppal   : #242424;
-      --sombra-sec    : #3c3c3c;
-
-      --borde-negro   : #FFFFFF50;
-  }
-}
-
-
-/* Configuramos si un usuario ha activado el modo alto contraste. (BETA) */
-// @media (prefers-contrast: high){
-//     :root{
-//         
-//     }
-// }

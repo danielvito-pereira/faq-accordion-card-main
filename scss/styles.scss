@@ -1,1 +1,134 @@
 @import 'reset/variables.scss' , 'reset/mixins' , 'reset/reset' ,'reset/keyframes';
+
+body{
+  font-family:var(--tipo-principal);
+  width: 100%;
+  height:100vh;
+  font-size: 12px;
+  background: linear-gradient(var(--soft-violet), var(--soft-blue));
+}
+.wrapper {
+  width: 90%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.wrapper {
+  .container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 70%;
+    max-width: 120em;
+    border-radius: 2em;
+    background-color: white;
+    padding-bottom: 1em;
+ 
+    h1{
+      font-size:26px;
+      font-weight:700;
+    }
+    .content{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .bloco{
+      margin: 0 0 1em;
+      padding:1em;
+      @include neo(1,1em , 1em);
+      width: 90%;
+      .h2{
+        display:flex;
+        justify-content:space-between;
+        height:2.5em;
+        font-size: 12px;
+        font-weight:700;
+        color: var(--dark-grayish-blue);
+        border-bottom: 1px solid var(--dark-grayish-blue);
+      }
+      .h2::after{
+        position: relative;
+        content: url(./../images/icon-arrow-down.svg);
+        align-items: flex-end;
+        margin-left:0.3em;
+      }
+      .conteudo{
+        padding:0em;
+        color: var(--dark-grayish-blue);
+        height:0;
+        overflow: hidden;
+        transition: all .5s ease;
+      }
+    }
+  }
+  .container {
+    .bloco.activo{
+      .h2{
+        color: var(--very-dark-desaturated-blue);
+      }
+      .h2::after{
+        content: url(./../images/186409_arrow_right_next_icon.svg);
+        position: relative;
+        align-items: flex-end;
+        margin-left:0.3em;
+        transition: all .5s ease;
+      }
+      .conteudo{
+        border-bottom: 1px solid var(--dark-grayish-blue);
+        height:5em;
+      }
+    }
+  }
+}
+
+@media(min-width:1000px) {
+  .wrapper{
+    .container {
+      flex-direction:row;
+      gap: 20px;
+      height:80%;
+      .content{
+        align-items:flex-start;
+        gap: 20px;
+        .title {
+          padding:1em 0.2em;
+        }
+      }
+    }
+  } 
+
+
+}
+
+
+.element {
+  background-color:red;
+  width: 90%;
+  height: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+   display: none;
+   font-size: 11px; text-align: center;
+   }
+.attribution a { color: hsl(228, 45%, 44%); }

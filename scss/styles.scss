@@ -71,6 +71,7 @@ body{
       padding:1em;
       @include neo(1,1em , 1em);
       width: 90%;
+      cursor: pointer;
       .h2{
         display:flex;
         justify-content:space-between;

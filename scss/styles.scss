@@ -9,26 +9,52 @@ body{
 }
 .wrapper {
   width: 90%;
-  height:100%;
+  height:100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-}
-.wrapper {
   .container {
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
-    height: 70%;
     max-width: 120em;
     border-radius: 2em;
     background-color: white;
     padding-bottom: 1em;
- 
+    padding: 1em;
+    height:90vh;
+    .element {
+      width: 90%;
+      height: 100%;
+      background-image: url(../images/bg-pattern-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+      position: relative;
+      top: 0;
+      right: 0;
+      left: 0;
+      .woman{
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/illustration-woman-online-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+      }
+    }
+    
+    
     h1{
       font-size:26px;
       font-weight:700;
@@ -49,7 +75,7 @@ body{
         display:flex;
         justify-content:space-between;
         height:2.5em;
-        font-size: 12px;
+        font-size: 1.5em;
         font-weight:700;
         color: var(--dark-grayish-blue);
         border-bottom: 1px solid var(--dark-grayish-blue);
@@ -94,10 +120,32 @@ body{
     .container {
       flex-direction:row;
       gap: 20px;
-      height:80%;
+      width: 80%;
+      height:auto;
+      .element {
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom right;
+        .woman{
+          width: 100%;
+          height: 100%;
+          background-image: url(../images/illustration-woman-online-desktop.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          position: relative;
+          left: -10%;
+          top: 0;
+          right: 0;
+        }
+      }
       .content{
         align-items:flex-start;
         gap: 20px;
+        padding: 5em;
         .title {
           padding:1em 0.2em;
         }
@@ -105,15 +153,23 @@ body{
     }
   } 
 
-
+  .element {
+    width: 90%;
+    height: 60%;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .woman{
+      width: 100%;
+      height: 100%;
+      background-image: url(../images/illustration-woman-online-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
 }
 
-
-.element {
-  background-color:red;
-  width: 90%;
-  height: 30%;
-}
 
 
 
